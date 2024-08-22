@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav">
+    <div class="nav__menu-toggle">
+        <span class="nav__menu-toggle-bar"></span>
+        <span class="nav__menu-toggle-bar"></span>
+        <span class="nav__menu-toggle-bar"></span>
+    </div>
+    <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+        <li class="nav__item"><a class="nav__link" href="#packages">Packages</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="home">
+    <div class="home__content">
+        <div class="home__img-wrapper">
+            <img class="home__img" src="images/my-memoji.png" alt="Galaxy Image">
+        </div>
+        <div class="home__text">
+            <h1 class="home__title">Welcome to My Website.<span class="wave__icon">👋</span></h1>
+            <p class="home__desc">I'm Gevorg Avetisian.<br>Full-Stack Developer.
+                See about me below.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about__section">
+    <h2 class="about__title">About Me</h2>
+    <p class="about__text">Hello, I'm Gevorg, a dedicated <strong class="highlight">Full-Stack Developer</strong>.</p>
+    <p class="about__text">Why choose me? I thrive on solving problems of any complexity and am available around the
+        clock. My applications are known for their <strong class="highlight">reliability</strong>, <strong
+                class="highlight">speed</strong>, and <strong class="highlight">flawless performance</strong>. My
+        mission is to create outstanding applications that exceed expectations. I love <strong class="highlight">learning
+            new things</strong> and continuously improving my skills.</p>
+    <p class="about__text">You can explore some of my showcased projects below, though I cannot display private projects
+        here. Additionally, you can view the packages I’ve developed.</p>
+    <p class="about__text">Feel free to explore my profiles and reach out:</p>
+    <ul class="about__links">
+        <li><a href="https://github.com/gev2002" target="_blank" rel="noopener noreferrer"
+               class="about__link-item"><code><img
+                alt=“github”
+                src="https://img.shields.io/badge/github-%25?style=for-the-badge&logo=github&logoColor=black&color=%23D3D3D3"/></code></a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/gev2002" target="_blank" rel="noopener noreferrer"
+               class="about__link-item">
+            <code><img alt=“linkedin”
+                       src="https://img.shields.io/badge/linkedin-%25?style=for-the-badge&logo=linkedin&logoColor=blue&color=%23D3D3D3"/></code>
+        </a></li>
+        <li><a href="mailto:gev.avet.02@gmail.com" class="about__link-item">
+            <code><img alt=“gmail”
+                       src="https://img.shields.io/badge/Gmail-%25?style=for-the-badge&logo=gmail&color=%23D3D3D3"/></code>
+        </a></li>
+    </ul>
+    <p class="about__text">For the best collaboration experience, please contact me via Gmail.</p>
+</section>
+
+
+<section id="projects" class="projects">
+    <h2 class="projects__title">Public Projects</h2>
+    <div class="project__cards">
+        <div class="project__card">
+            <img class="project__img" src="images/e-comm.png" alt="E-Comm App Kit Image">
+            <h3 class="project__card-title">e-Comm App Kit</h3>
+            <p class="project__card-desc">
+                E-Comm App Kit streamlines online store setup and management with product management, secure payments,
+                and an intuitive design.
+            </p>
+        </div>
+        <div class="project__card">
+            <img class="project__img" src="images/movir.png" alt="Movir Image">
+            <h3 class="project__card-title">Movir</h3>
+            <p class="project__card-desc">
+                Movir is an app that lets you watch film and serial trailers, search for titles, and discover trending
+                and popular movies with ease.
+            </p>
+        </div>
+        <div class="project__card">
+            <img class="project__img" src="images/todo.png" alt="To-do Image">
+            <h3 class="project__card-title">To-do</h3>
+            <p class="project__card-desc">
+                To-Do App helps you efficiently manage tasks with an easy interface, allowing you to add, edit, and
+                track to-dos and set priorities.
+            </p>
+        </div>
+        <div class="project__card">
+            <img class="project__img" src="images/cinema-zone.png" alt="Cinema Zone Image">
+            <h3 class="project__card-title">Cinema Zone</h3>
+            <p class="project__card-desc">
+                Cinemazone lets you watch film trailers, buy tickets for yourself and friends, and choose your seats
+                online, all with secure payment options.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="packages" class="packages">
+    <h2 class="packages__title">Created Packages</h2>
+    <div class="packages__cards">
+        <div class="package__card">
+            <img class="package__img" src="images/text_recognition.png" alt="text_recognition"/>
+            <h3>react-native-vision-camera-text-recognition</h3>
+            <p>Package for real-time text recognition and translation.</p>
+            <div class="package__overlay">
+                <div class="package__overlay-text">
+                    React Native Vision Camera Text Recognition is a plugin for real-time text recognition and
+                    translation, powered by Google ML Kit. It seamlessly integrates with the React Native Vision Camera
+                    to extract and translate text from images or live camera feeds.
+                    <div>
+                        <br/>
+                        <p>See package in`</p>
+                        <div class="package__link">
+                            <a href="https://www.npmjs.com/package/react-native-vision-camera-text-recognition"
+                               target="_blank"><code><img alt="npm"
+                                                          src="https://img.shields.io/badge/npm-%25?style=for-the-badge&logo=npm&logoColor=ff0000&color=f0f0f0"></code></a>
+                            <a href="https://github.com/gev2002/react-native-vision-camera-text-recognition"
+                               target="_blank"><code><img alt="github"
+                                                          src="https://img.shields.io/badge/github-%25?style=for-the-badge&logo=github&logoColor=black&color=f0f0f0"></code></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="package__card">
+            <img class="package__img" src="images/image_labeling.png" alt="image_labeling"/>
+            <h3>react-native-vision-camera-image-labeler</h3>
+            <p>Package for real-time image labeling.</p>
+            <div class="package__overlay">
+                <div class="package__overlay-text">
+                    React Native Vision Camera Image Labeling is a plugin for real-time image labeling, powered by
+                    Google ML Kit. It seamlessly integrates with the React Native Vision Camera to automatically
+                    identify and label objects in images or live camera feeds.
+                    <div>
+                        <br/>
+                        <p>See package in`</p>
+                        <div class="package__link">
+                            <a href="https://www.npmjs.com/package/react-native-vision-camera-image-labeler"
+                               target="_blank"><code><img alt="npm"
+                                                          src="https://img.shields.io/badge/npm-%25?style=for-the-badge&logo=npm&logoColor=ff0000&color=f0f0f0"></code></a>
+                            <a href="https://github.com/gev2002/react-native-vision-camera-image-labeler"
+                               target="_blank"><code><img alt="github"
+                                                          src="https://img.shields.io/badge/github-%25?style=for-the-badge&logo=github&logoColor=black&color=f0f0f0"></code></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="package__card">
+            <img class="package__img" src="images/barcode_scanning.png" alt="barcode_scanning"/>
+            <h3>react-native-vision-camera-barcodes-scanner</h3>
+            <p>Package for real-time barcode scanning.</p>
+            <div class="package__overlay">
+                <div class="package__overlay-text">
+                    React Native Vision Camera Barcode Scanning is a plugin designed for real-time barcode scanning,
+                    powered by Google ML Kit. Exclusively for use with live camera feeds, it seamlessly integrates with
+                    the React Native Vision Camera to detect and decode various barcode formats instantly.
+                    <div>
+                        <br/>
+                        <p>See package in`</p>
+                        <div class="package__link">
+                            <a href="https://www.npmjs.com/package/react-native-vision-camera-barcodes-scanner"
+                               target="_blank"><code><img alt="npm"
+                                                          src="https://img.shields.io/badge/npm-%25?style=for-the-badge&logo=npm&logoColor=ff0000&color=f0f0f0"></code></a>
+                            <a href="https://github.com/gev2002/react-native-vision-camera-barcodes-scanner"
+                               target="_blank"><code><img alt="github"
+                                                          src="https://img.shields.io/badge/github-%25?style=for-the-badge&logo=github&logoColor=black&color=f0f0f0"></code></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="package__card">
+            <img class="package__img" src="images/face_detection.png" alt="face_detection"/>
+            <h3>react-native-vision-camera-v3-face-detection</h3>
+            <p>Package for real-time face detection.</p>
+            <div class="package__overlay">
+                <div class="package__overlay-text">
+                    React Native Vision Camera Face Detection v3 is a plugin for real-time face detection, powered by
+                    Google ML Kit. Designed exclusively for use with live camera feeds, it integrates seamlessly with
+                    the React Native Vision Camera to detect and track faces in real time.
+                    <div>
+                        <br/>
+                        <p>See package in`</p>
+                        <div class="package__link">
+                            <a href="https://www.npmjs.com/package/react-native-vision-camera-v3-face-detection"
+                               target="_blank"><code><img alt="npm"
+                                                          src="https://img.shields.io/badge/npm-%25?style=for-the-badge&logo=npm&logoColor=ff0000&color=f0f0f0"></code></a>
+                            <a href="https://github.com/gev2002/react-native-vision-camera-v3-face-detection"
+                               target="_blank"><code><img alt="github"
+                                                          src="https://img.shields.io/badge/github-%25?style=for-the-badge&logo=github&logoColor=black&color=f0f0f0"></code></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="package__card">
+            <img class="package__img" src="images/pose_detection.png" alt="pose_detection"/>
+            <h3>react-native-vision-camera-v3-pose-detection</h3>
+            <p>Package for real-time pose detection.</p>
+            <div class="package__overlay">
+                <div class="package__overlay-text">
+                    React Native Vision Camera Pose Detection is a plugin for real-time pose detection, powered by
+                    Google ML Kit. Exclusively designed for use with live camera feeds, it seamlessly integrates with
+                    the React Native Vision Camera to accurately detect and track human poses in real time.
+                    <div>
+                        <br/>
+                        <p>See package in`</p>
+                        <div class="package__link">
+                            <a href="https://www.npmjs.com/package/react-native-vision-camera-v3-pose-detection"
+                               target="_blank"><code><img alt="npm"
+                                                          src="https://img.shields.io/badge/npm-%25?style=for-the-badge&logo=npm&logoColor=ff0000&color=f0f0f0"></code></a>
+                            <a href="https://github.com/gev2002/react-native-vision-camera-v3-pose-detection"
+                               target="_blank"><code><img alt="github"
+                                                          src="https://img.shields.io/badge/github-%25?style=for-the-badge&logo=github&logoColor=black&color=f0f0f0"></code></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="see__more_packages">
+        <h2>For More Info Visit</h2>
+        <div class="packages_see_more">
+            <a class="see__more__link" target="_blank"
+               href="https://react-native-vision-camera.com/docs/guides/frame-processor-plugins-community#plugin-list">
+                <span >React Native Vision Camera &nbsp;</span>
+                &#128248;
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="contact__content">
+    <h2 class="contact__title">
+        Feel free to reach out via gmail
+    </h2>
+    <a href="mailto:gev.avet.02@gmail.com" class="contact__link">
+        <img alt="gmail" src="/images/gmail.svg" class="contact__img"/>
+        <p class="contact__desc">gev.avet.02@gmail.com</p>
+    </a>
+    </div>
+</section>
+<footer class="footer">
+    <p class="footer__text">&copy; 2024 Gevorg Avetisian. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
