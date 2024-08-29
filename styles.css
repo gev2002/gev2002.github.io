@@ -28,7 +28,7 @@ body {
 }
 
 .nav__item {
-    margin: 5px;
+    margin: 10px 20px;
     position: relative;
 }
 
@@ -130,15 +130,15 @@ body {
     max-width: 1200px;
 }
 
-.home__img-wrapper {
-    position: relative;
-    display: inline-block;
-    border-radius: 100%;
-    overflow: hidden;
-    flex: 1;
-    max-width: 200px;
-    margin-bottom: 20px;
-}
+/*.home__img-wrapper {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    border-radius: 100%;*/
+/*    overflow: hidden;*/
+/*    flex: 1;*/
+/*    max-width: 200px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
 
 .home__img {
     width: 100%;
@@ -159,9 +159,39 @@ body {
     text-overflow: ellipsis;
 }
 
-.home__img-wrapper:hover .home__img {
-    opacity: 0.3;
+.home__img-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+    flex: 1;
+    max-width: 200px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
+
+@keyframes spin {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    25% {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+    50% {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+    75% {
+        transform: rotate3d(0, 1, 0, 270deg);
+    }
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+.spin-animation {
+    animation: spin 1.5s ease-in-out 1;
+}
+
 
 @media (max-width: 768px) {
     .home {
@@ -210,6 +240,7 @@ body {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
+    height: auto;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -255,26 +286,57 @@ body {
     background: #f4f4f4;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.project__card-desc{
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.project__card:hover .overlay {
-    opacity: 1;
-}
 
 .project__card:hover {
     transform: scale(1.05);
 }
-.project__img{
+
+.project__card:hover .project__overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.project__video {
+    border-radius: 35px;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.project__img {
     width: 100%;
     height: auto;
+    border-radius: 35px;
+}
+
+.project__card-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.project__card-desc {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 .projects__title{
     color: #fff;

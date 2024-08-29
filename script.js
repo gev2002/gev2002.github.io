@@ -11,7 +11,6 @@ document.querySelectorAll('.nav__link').forEach(anchor => {
             if (!start) start = timestamp;
             const progress = timestamp - start;
             const ease = Math.min(progress / duration, 1);
-
             window.scrollTo(0, startPosition + distance * ease);
 
             if (progress < duration) {
@@ -27,7 +26,6 @@ window.addEventListener('scroll', function() {
     const aboutSection = document.querySelector('#about');
     const position = aboutSection.getBoundingClientRect().top;
     const screenPosition = window.innerHeight / 1.4;
-
     if (position < screenPosition) {
         aboutSection.classList.add('fade-in');
     }
@@ -36,7 +34,6 @@ window.addEventListener('scroll', function() {
 document.querySelector('.nav__menu-toggle').addEventListener('click', function() {
     const navUl = document.querySelector('.nav__list');
     const toggleIcon = document.querySelector('.nav__menu-toggle');
-
     navUl.classList.toggle('active');
     toggleIcon.classList.toggle('active');
 
@@ -56,4 +53,12 @@ window.addEventListener('scroll', function() {
         toggleIcon.classList.remove('active');
         document.body.style.overflow = 'auto';
     }
+});
+
+document.getElementById('imgWrapper').addEventListener('click', function() {
+    const img = this.querySelector('.home__img');
+    img.classList.add('spin-animation');
+    img.addEventListener('animationend', function() {
+        img.classList.remove('spin-animation');
+    }, { once: true });
 });
